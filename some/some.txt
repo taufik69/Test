@@ -1,5 +1,67 @@
-hello this a some changes file. noting something else .
-here is some text added in this  derectory 
+This text for this practice of github . git is more smarter than me .
+
+git main task is:
+
+    * connect a local respository to remote repository .
+
+     --> git remote add origin <https url>
+        -->|Then check the remote repository is sucessfully connect to the local repository .
+          -->| git remote -v 
+
+    * Doing work in working derectory .
+
+        -->| add file to straging.
+            -->| use can use this git command .
+               -->| git add . or git add file name .
 
 
- im working on 4th day in this project 
+    * After addiing repository staging then you can see what kind of difference between after and before file helps of this git command.
+
+        -->| git diff  thats means difference between file . moral of the stroy you see the all changes.
+
+
+    * if you want roll back to working directory.
+
+      -->| git reset or git rm --cached [file name]
+
+
+
+    * Now the main part of git . this is commit part.
+
+      -->| adding done then you are ready to commmit this file . commit is the identification of repository .
+         -->| git commit -m ["Here is the message of about commiting file "]
+            -->| git add [file name ] && git commmit -m ["message"]
+                -->| git log show the comminting form .
+                    -->| git log --oneline show the head of commiting.
+                        -->| git checkout [commit head id].
+                            -->| git checkout master # back to the previous from i mean reacent commiting portion.
+                            -->| git show  # this command show the which file is changes.
+
+
+    * Now you done commit if you want to rool back to commit .
+
+        --> |git reset --soft HEAD^ 
+            # This commmand helps to rollback recent commit . this soft reset don't break to adding or straging.
+            -->| git reset HEAD^
+                 # This command reset everything i meant its break the commit and through unstage platfom . when you use to this command 
+                   then again doing to add or staging file.
+                   -->|git reset --hard HEAD^ 
+                        # this command break the commit and also its move to file working derectory.
+                        -->| git reset --soft HEAD~2
+                             # Braking the two commits
+                             -->| git reset --soft HEAD~3
+
+    * Here is the push git comomand.
+
+        -->| git push -u origin master/main 
+             # Here is the some objection last word is brach name and previous word means the connection keyword it is not default . you can 
+               Change here.
+               -->| git push . 
+                    # if you push in second time just write about command . 
+
+
+    * Pull commmand.
+
+        -->| git pull [remote repository https link]
+
+
