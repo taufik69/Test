@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Taufik from "./Taufik";
 function App() {
   let [frist, setfrist] = useState(0);
   let [color, setcolor] = useState();
@@ -16,7 +16,7 @@ function App() {
       </button>
 
       {/* no9thing fancy  */}
-      <h2>{color}</h2>
+      <Taufik />
     </>
   );
 }
